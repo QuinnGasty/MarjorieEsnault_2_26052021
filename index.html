@@ -30,10 +30,10 @@
        <p>En plein centre ville ou en pleine nature</p>
 
        <div id="barre_recherche">
-       <i class="fas fa-map-marker-alt"></i>
-       <form method="POST" action="#">
+       <form method="POST" action="traitement.php">
+        <i class="fas fa-map-marker-alt" id="localisation"></i>
            <input type="search" name="search" value="Marseille, France" />
-           <input type="submit" name="submit" value="Rechercher" />
+           <div class="bouton_recherche"><span id="submit_recherche">Rechercher</span><i class="fas fa-search"></i></div>
        </form>
        </div>
 

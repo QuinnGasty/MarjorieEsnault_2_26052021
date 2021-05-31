@@ -27,7 +27,15 @@ body
 {    
     font-family: 'ralewaythin', sans-serif;
     color: black;
+    margin-left: 50px;
 }
+
+#bloc_page
+{
+    margin: auto;
+}
+
+/* Header et nav*/
 
 header
 {
@@ -61,6 +69,7 @@ nav ul
 nav li
 {
     margin-right: 65px;
+    margin-top: 20px;
     font-style: bolder;
 }
 
@@ -74,10 +83,71 @@ nav a:hover:not(#inscription)
 {
     color: #0065FC;
     border-top: 2px solid #0065FC;
+    line-height: 20px;
+    padding-top: 42px;
+}
+
+/* Barre de recherche */
+
+#corps_recherche
+{
+    margin-top: 30px;
 }
 
 h1
 {
     font-size: 1.3em;
     font-family: 'ralewaybold', sans-serif;
+}
+
+p
+{
+    margin-top: -10px;
+    font-size: 1em;
+}
+
+form
+{
+   display: inline-flex;
+   vertical-align: baseline;
+   border: 1px solid #F2F2F2;
+   border-radius: 15px 15px 15px 15px;
+}
+
+#localisation
+{
+    width: 20px;
+    padding: 15px;
+    background-color: #F2F2F2;
+    border-radius: 15px 0px 0px 15px;
+    text-align: center;
+    font-size: 1.2em;
+}
+
+input
+{
+    display: inline;
+    padding: 15px;
+    width: 220px;
+    font-family: 'ralewaybold', sans-serif;
+    font-size: 1em;
+    font-weight: bold;
+    border: none
+}
+
+.bouton_recherche
+{
+    width: 110px;
+    font-family: 'ralewaybold', sans-serif;
+    font-size: 1em;
+    background-color: #0065FC;
+    color: white;
+    border-radius: 0px 15px 15px 0px;
+    text-align: center;
+    padding: 15px;
+}
+
+.bouton_recherche i
+{
+    display: none;
 }
