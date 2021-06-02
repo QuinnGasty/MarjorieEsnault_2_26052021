@@ -87,7 +87,7 @@ nav a:hover:not(#inscription)
     padding-top: 42px;
 }
 
-/* Barre de recherche */
+/* Barre de recherche et filtres */
 
 #corps_recherche
 {
@@ -195,4 +195,25 @@ input
     background-color: #DEEBFF;
     color: #0065FC;
 }
+
+#info
+{
+    margin-top: 40px;
+    display: flex;
+}
+
+#info i
+{
+    border: 2px solid #F2F2F2;
+    border-radius: 100%;
+    color: #0065FC;
+    font-size: 12px;
+    padding: 5px;
+    margin-right: 15px;
+    text-align: center;
+    width: 12px;
+}
+
+/* Hébergements - Marseille */
+
 
