@@ -216,38 +216,91 @@ input
 
 /* Hébergements - Marseille */
 
-.carte_logements h2
+#classique_pop
 {
-    font-family: 'ralewaybold', sans-serif;
-    font-size: 1.3em;
-    margin-left: 30px;
-    margin-top: 35px;
+    display: flex;
+    flex-wrap: wrap-reverse;
+    justify-content: space-between;
+    margin-top: 30px;
 }
 
 .carte_logements
 {
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-between;
-    flex-wrap: wrap-reverse;
-    margin-top: 35px;
+    width: 850px;
+    background-color: #F2F2F2;
+    border-radius: 20px;
+    flex: 2;
 }
 
-.carte_logement
+.carte_logements h2
+{
+    margin-left: 30px;
+    margin-top: 35px;
+    font-family: 'ralewaybold', sans-serif;
+    font-size: 1.3em;
+}
+
+.hebergement, #voirplus
 {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
-    background-color: #F2F2F2;
-    border-radius: 15px;
-    width: 800px;
+    justify-content: space-evenly;
 }
 
-.carte_hebergement img
+.carte_hebergement
 {
-    width: 250px;
-    height: 200px;
-    object-fit: cover;
-    border: 5px solid white;
-    border-radius: 15px;
+    width: 230px;
+    padding: 4px;
+    background-color: white;
+    border-radius: 20px;
+    margin: 0;
+    box-shadow: 1px 1px 10px 1px #E3E3E3;
 }
+
+.carte_hebergement:hover
+{
+    background-color: #DEEBFF;
+}
+
+.hebergement img
+{
+    width: 230px;
+    height: 120px;
+    border-radius: 20px 20px 0px 0px;
+    object-fit: cover;
+}
+
+.bloc_texte
+{
+    line-height: 5px;
+    margin-bottom: 5px;
+    margin-left: 10px;
+    font-size: 0.8em;
+    
+}
+
+.bloc_texte h3
+{
+    font-family: 'ralewaybold', sans-serif;
+    font-size: 1.2em;
+    padding-bottom: 10px;
+}
+
+strong
+{
+    font-family: 'ralewaybold', sans-serif;
+}
+
+#voirplus 
+{
+    margin-left: 25px;
+    margin-top: 30px;
+    font-family: 'ralewaybold', sans-serif;
+    margin-bottom: 35px;
+}
+
+
 
