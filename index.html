@@ -14,7 +14,7 @@
        <header>
            <div id="logo">
                <img src="images/logo/Reservia.svg" alt="Logo Reservia" />
-               <div><a href="#" id="inscription_mobile">S'inscrire</a></div>
+               <!--<div><a href="#" id="inscription_mobile">S'inscrire</a></div>-->
            </div>
            <nav>
                <ul>
@@ -39,6 +39,7 @@
 
        <div id="filtres">
         <h2>Filtres</h2>
+        <div class="filtres">
            <div class="filtre">
             <div class="icone_filtre"><i class="fas fa-money-bill-wave"></i></div>
                 <span>Économique</span>
@@ -56,17 +57,18 @@
                 <span>Animaux autorisés</span>
            </div>
         </div>
+        </div>
 
         <div id="info">
             <p class="icone_filtre"><i class="fas fa-info"></i>Plus de 500 logements sont disponibles dans cette ville</p>
         </div>
     </div>
 
-    <div id="classique_pop">
-        <section class="carte_logements">
+    <section id="classique_pop">
+        <div class="carte_logements">
             <h2>Hébergements à Marseille</h2>
 
-        <div class="hebergement">
+        <article class="hebergement">
             <a href="#">
                 <figure class="carte_hebergement">
                     <img src="images/hebergements/4_small/marcus-loke-WQJvWU_HZFo-unsplash.jpg" alt="Auberge de la Cannebière" class="bloc_image"/>
@@ -156,12 +158,12 @@
                 </figcaption>
                 </figure>
             </a>
-        </div>
+        </article>
 
             <div id="voirplus">
                 <a href="#">Afficher plus</a>
             </div>
-        </section>
+        </div>
 
             <aside id="populaires">
                 <h2>Les plus populaires <i class="fas fa-chart-line"></i></h2>
@@ -214,63 +216,72 @@
                 </a>
             </div>
         </aside>
-    </div>
+    </section>
 
         <section class="activites_marseille">
             <h2>Activités à Marseille</h2>
 
-            <div class="activites">
+            <div id="img_activites">
+
+            <div class="activites1">
                 <a href="#">
-                    <img src="images/activites/3_medium/reno-laithienne-QUgJhdY5Fyk-unsplash.jpg" alt="Vieux Port" class="image_activites" />
-                    <div class="texte_activites">
+                    <figure class="imgactivite1">
+                    <img src="images/activites/4_small/reno-laithienne-QUgJhdY5Fyk-unsplash.jpg" alt="Vieux Port" class="image_activites" />
+                    <figcaption class="texte_activites">
                         <h3>Vieux Port</h3>
-                    </div>
+                    </figcaption>
+                    </figure>
                 </a>
             </div>
 
-            <div class="activites">
+            <div class="activites2_3">
                 <a href="#">
+                    <figure class="imgactivite2">
                     <img src="images/activites/4_small/paul-hermann-QFTrLdQIRhI-unsplash.jpg" alt="Fort de Pomègues" class="image_activites" />
-                    <div class="texte_activites">
+                    <figcaption class="texte_activites">
                         <h3>Fort de Pomègues</h3>
-                    </div>
+                    </figcaption>
+                    </figure>
                 </a>
-            </div>
-
-            <div class="activites">
                 <a href="#">
+                    <figure class="imgactivite3">
                     <img src="images/activites/4_small/kevin-hikari-rV_Qd1l-VXg-unsplash.jpg" alt="Îles du Frioul" class="image_activites" />
-                    <div class="texte_activites">
+                    <figcaption class="texte_activites">
                         <h3>Îles du Frioul</h3>
-                    </div>
+                    </figcaption>
+                    </figure>
                 </a>
             </div>
 
-            <div class="activites">
+            <div class="activites4">
                 <a href="#">
-                    <img src="images/activites/3_medium/kilyan-sockalingum-NR8-cBCN3aI-unsplash.jpg" alt="Parc National des Calanques" class="image_activites" />
-                    <div class="texte_activites">
+                    <figure class="imgactivite4">
+                    <img src="images/activites/4_small/kilyan-sockalingum-NR8-cBCN3aI-unsplash.jpg" alt="Parc National des Calanques" class="image_activites" />
+                    <figcaption class="texte_activites">
                         <h3>Parc National des Calanques</h3>
-                    </div>
+                    </figcaption>
+                    </figure>
                 </a>
             </div>
 
-            <div class="activites">
+            <div class="activites5_6">
                 <a href="#">
+                    <figure class="activite5">
                     <img src="images/activites/4_small/florian-wehde-xW9e8gdotxI-unsplash.jpg" alt="Notre-Dame-de-la-Garde" class="image_activites" />
-                    <div class="texte_activites">
+                    <figcaption class="texte_activites">
                         <h3>Notre-Dame-de-la-Garde</h3>
-                    </div>
+                    </figcaption>
+                    </figure>
+                </a>
+                <a href="#">
+                    <figure class="activite6">
+                    <img src="images/activites/4_small/lena-paulin-wH2-EJoDcV0-unsplash.jpg" alt="Parc Longchamp" class="image_activites" />
+                    <figcaption class="texte_activites">
+                        <h3>Parc Longchamp</h3>
+                    </figcaption>
+                    </figure>
                 </a>
             </div>
-
-            <div class="activites">
-                <a href="#">
-                    <img src="images/activites/4_small/lena-paulin-wH2-EJoDcV0-unsplash.jpg" alt="Parc Longchamp" class="image_activites" />
-                    <div class="texte_activites">
-                        <h3>Parc Longchamp</h3>
-                    </div>
-                </a>
             </div>
         </section>
 
@@ -301,6 +312,5 @@
             </div>
         </footer>
         </div>
-    </div>
 </body>
 </html>
