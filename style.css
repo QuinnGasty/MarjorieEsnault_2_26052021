@@ -22,7 +22,9 @@
     font-style: normal;
 
 }
-*{
+
+*
+{
      box-sizing: border-box;
 }
 
@@ -55,6 +57,7 @@ header
     float: left;
     width: 150px;
 }
+
 #inscription_mobile
 {
     display: none;
@@ -231,13 +234,12 @@ input
 #classique_pop
 {
     display: flex;
-   /* flex-wrap: wrap-reverse; */
-    /*justify-content: space-between;*/
     margin-top: 30px;
-    padding: 0;;
+    padding: 0;
 }
 
-.hebergement{
+.hebergement
+{
   display: flex;
   flex-wrap: wrap;
 }
@@ -246,12 +248,8 @@ input
 {
     display: flex;
     flex-direction: column; 
-    /* flex-wrap: wrap; */
-    /* justify-content: space-between;
-    width: 750px; */
     background-color: #F2F2F2;
     border-radius: 20px;
-    /* flex: 2; */
 }
 
 .carte_logements h2
@@ -261,8 +259,6 @@ input
     font-family: 'ralewaybold', sans-serif;
     font-size: 1.3rem;
 }
-
-
 
 .carte_hebergement
 {
@@ -292,7 +288,6 @@ figure a
 {
     width: 100%;
     height: 120px;
-    /* border-radius: 20px 20px 0px 0px; */
     object-fit: cover;
 }
 
@@ -301,8 +296,7 @@ figure a
     line-height: 5px;
     margin-bottom: 5px;
     margin-left: 10px;
-    font-size: 0.8em;
-    
+    font-size: 0.8em; 
 }
 
 .bloc_texte h3
@@ -330,10 +324,8 @@ strong
 
 #populaires
 {
-    /*width: 400px;*/
     background-color: #F2F2F2;
     border-radius: 20px;
-    /*flex: 1;*/
     margin-left: 20px;
 }
 
@@ -373,7 +365,6 @@ strong
 .carte_populaires h3
 {
     font-family: 'ralewaybold', sans-serif;
-    
 }
 
 .carte_hebergement_pop
@@ -384,11 +375,9 @@ strong
     padding: 4px;
     background-color: white;
     border-radius: 20px 20px 20px 20px;
-    /* margin: 0; */
     box-shadow: 1px 1px 10px 1px #E3E3E3;
     display: flex;
     overflow: hidden;
-    box-sizing: border-box;
 }
 
 .carte_hebergement_pop:hover
@@ -412,46 +401,145 @@ strong
 
 /* Activités */
 
-/* .activites_marseille
+.activites_marseille
 {
-    margin-top: 40px;
+    padding-top: 30px;
     font-family: 'ralewaybold', sans-serif;
-    font-size: 0.85em;
 }
 
-.activites_marseille a
+.activites_marseille h2
 {
-    margin: 10px;
-    border-radius: 20px;
+    font-size: 1.3rem;
 }
 
 #img_activites
 {
-
-    justify-content: space-between;
-    margin-left: -40px;
+    display: grid;
+    margin-left: -30px;
+    grid-template-columns: 350px 350px 350px 350px;
+    grid-template-rows: 150px 150px 150px 150px;
 }
 
-.activites_marseille figure
-{
-    background-color: white;
-    border-radius: 20px;
-    margin-top: 13px;
-    margin: 0;
-    box-shadow: 1px 1px 10px 1px #E3E3E3;
-}
-
-.activites_marseille figure:hover
+#img_activites figcaption:hover
 {
     background-color: #DEEBFF;
 }
 
+#img_activites h3
+{
+    margin-left: 5px;
+}
+
+#img_activites img
+{
+    border-radius: 20px 20px 0px 0px;
+}
+
+#img_activites figure
+{
+    border: 0px solid #fff;
+    box-shadow: 1px 1px 10px 1px #E3E3E3;
+    border-radius: 20px 20px 20px 20px;
+}
+
 .activites1
 {
+    grid-column-start: 1;
+    grid-row: 1 / 5;
+}
+
+.activites1 img
+{
+    height: 400px;
+    width: 100%;
+    object-fit: cover;
+}
+
+.activites2
+{
+    grid-column-start: 2;
+    grid-row: 1 / 3;
+}
+
+.activites2 img
+{
+    height: 200px;
+    width: 100%;
+    object-fit: cover;
+}
+
+.activites3
+{
+    grid-column-start: 2;
+    grid-row: 3 / 5;
+}
+
+.activites3 img
+{
+    height: 100px;
+    width: 100%;
+    object-fit: cover;
+}
+
+.activites4
+{
+    grid-column-start: 3;
+    grid-row: 1 / 5;
+}
+
+.activites4 img
+{
+    height: 400px;
+    width: 100%;
+    object-fit: cover;
+}
+
+.activites5
+{
+    grid-column-start: 4;
+    grid-row: 1 / 3 ;
+}
+
+.activites5 img
+{
+    height: 130px;
+    width: 100%;
+    object-fit: cover;
+}
+
+.activites6
+{
+    grid-column-start: 4;
+    grid-row: 3 / 5;
+}
+
+.activites6 img
+{
+    height: 130px;
+    width: 100%;
+    object-fit: cover;
+}
+
+.texte_activites
+{
+    background-color: white;
+    font-size: 0.9em;
+    padding: 5px;
+    border: 0px solid white;
+    border-radius: 0px 0px 20px 20px;
+}
+
+/* Footer */
+
+footer
+{
+    padding-top: 100px;
     display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-} */
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+
 
 
 
