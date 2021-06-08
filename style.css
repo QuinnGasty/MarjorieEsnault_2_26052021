@@ -533,11 +533,40 @@ strong
 
 footer
 {
-    padding-top: 100px;
     display: flex;
-    justify-content: space-between;
-    align-items: flex-start;
+    background-color: #F2F2F2;
+    margin-left: -50px;
+    margin-right: -50px;
 }
+
+footer h2
+{
+    font-family: 'ralewaybold', sans-serif;
+    font-size: 1.1em;
+}
+
+footer ul
+{
+    list-style: none;
+    padding-right: 50px;
+}
+
+#a_propos
+{
+    margin-left: 60px;
+    width: 33%;
+}
+
+#nos_hebergements
+{
+    width: 33%;
+}
+
+#assistance
+{
+    width: 34%;
+}
+
 
 
 
