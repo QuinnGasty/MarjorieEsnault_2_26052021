@@ -78,6 +78,29 @@
        width: 50px;
     }
 
+    #info i 
+    {
+        float: left;
+    }
+
+    #filtres
+    {
+        padding-top: 15px;
+    }
+    
+    .filtre
+    {
+        margin-left: 0;
+        margin-right: 0;
+        font-size: 0.8em;
+        margin: 5px;
+    }
+
+    .icone_filtre:not(p)
+    {
+        font-size: 1.3em;
+    }
+
     /* Hébergements */
 
     #classique_pop
