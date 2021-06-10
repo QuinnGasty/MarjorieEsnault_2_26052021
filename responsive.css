@@ -6,35 +6,53 @@
 
     header
     {
-        display: inline-grid;
-        font-size: 1em;
-        margin-left: 30px;
-    }
-
-    #logo img 
-    {
-        width: 180px;
-        padding: 20px;
-        float: left;
+        margin-left: 0;
+        display: inline;
+        margin: 0;
     }
 
     #logo
     {
+        float: unset;
         display: flex;
-        flex-direction: row;
-        align-items: flex-end;
+        width: 95%;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    #logo img 
+    {
+        margin-left: 20px;
+        margin-top: 20px;
+        margin-bottom: 20px;
     }
 
     #inscription_mobile
     {
         font-family: 'ralewaybold', sans-serif;
         color: #0065FC;
-        display: inline;
+        display: initial;
+        margin-top: 20px;
     }
 
     #inscription
     {
         display: none;
+    }
+
+    nav ul
+    {
+        padding: 0;
+        justify-content: space-around;
+        margin-bottom: 50px;
+        margin-left: 30px;
+        margin-top: 20px;        
+    }
+
+    nav li 
+    {
+        margin: 0;
+        padding: 0;
     }
 
     /* Recherche et filtres */
@@ -87,7 +105,7 @@
     {
         padding-top: 15px;
     }
-    
+
     .filtre
     {
         margin-left: 0;
@@ -122,6 +140,17 @@
     }
 
     .carte_hebergement_pop
+    {
+        width: 100%;
+    }
+
+    .carte_hebergement_pop img 
+    {
+        width: 50%;
+        min-width: 130px;
+    }
+
+    .bloc_texte_pop
     {
         width: 100%;
     }
