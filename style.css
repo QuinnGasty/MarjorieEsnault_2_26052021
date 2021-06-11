@@ -243,17 +243,22 @@ input
 
 .hebergement
 {
-  display: flex;
-  flex-wrap: wrap;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    margin-left: 10px;
+}
+
+.hebergement figure
+{
+    margin-inline-start: 10px;
+    margin-inline-end: 10px;
 }
 
 .carte_logements
 {
-    display: flex;
-    flex-direction: column; 
     background-color: #F2F2F2;
     border-radius: 20px;
-    /*width: 66%;*/
     padding-right: 20px;
     margin-left: 50px;
 }
@@ -266,23 +271,15 @@ input
     font-size: 1.3rem;
 }
 
-.carte_hebergement
+.carte_hebergement 
 {
-    flex: 25%;
     height: 200px;
     margin-right: 20px;
     margin-bottom: 30px;
     background-color: white;
-    border: 5px solid #fff;
     border-radius: 20px;
     box-shadow: 1px 1px 10px 1px #E3E3E3;
     overflow: hidden;
-}
-
-figure a
-{
-  display: flex;
-  flex-direction: column;
 }
 
 .carte_hebergement:hover
@@ -295,12 +292,14 @@ figure a
     width: 100%;
     height: 120px;
     object-fit: cover;
+    overflow: hidden;
+    border: 5px solid #fff;
+    border-radius: 20px 20px 0px 0px;
 }
 
 .bloc_texte
 {
-    line-height: 5px;
-    margin-bottom: 10px;
+    line-height: 2px;
     margin-left: 10px;
     font-size: 0.8em; 
 }
@@ -379,7 +378,6 @@ strong
     margin: 10px 0px;
     width: 350px;
     height: 150px;
-    padding: 4px;
     background-color: white;
     border-radius: 20px 20px 20px 20px;
     box-shadow: 1px 1px 10px 1px #E3E3E3;
@@ -398,6 +396,8 @@ strong
     height: 100%;
     border-radius: 20px 0px 0px 20px;
     object-fit: cover;
+    border: 5px solid white;
+    overflow: hidden;
 }
 
 .bloc_texte_pop
@@ -433,8 +433,6 @@ strong
     margin-bottom: 50px;
 }
 
-
-
 #img_activites figure:hover
 {
     box-shadow: 3px 3px 10px 3px #E3E3E3;
@@ -447,7 +445,6 @@ strong
 
 #img_activites img
 {
-    /*border-radius: 20px 20px 0px 0px;*/
     height: 100%;
     width: 100%;
     object-fit: cover;
@@ -461,6 +458,7 @@ strong
     box-sizing: border-box;
     overflow: hidden;
     box-shadow: 1px 1px 10px 1px #E3E3E3;
+    border-radius: 20px;
 }
 
 .activites1
