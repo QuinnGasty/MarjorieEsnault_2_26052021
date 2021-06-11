@@ -96,6 +96,11 @@
        width: 50px;
     }
 
+    input 
+    {
+        width: 180px;
+    }
+
     #info i 
     {
         float: left;
@@ -186,18 +191,18 @@
         margin-left: 20px;
     }
 
-    #img_activites
+    /*#img_activites
     {
         display: flex;
         flex-direction: column;
         margin-left: 0;
         padding-bottom: 30px;
-    }
+    }*/
 
-    #img_activites img
+    /*#img_activites img
     {
         height: 100px;
-    }
+    }*/
 
     /* Footer */
 
@@ -224,5 +229,71 @@
         margin-left: 30px;
         width: 100%;
         margin-top: -60px;
+    }
+}
+
+@media  only screen and (max-width: 1080px)
+{
+    .filtre
+    {
+        margin: 5px;
+    }
+
+    #classique_pop
+    {
+       flex-direction: column-reverse;
+    }
+
+    .carte_populaires
+    {
+        flex-direction: row;
+    }
+
+    #img_activites
+    {
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    grid-template-areas: 
+        "a b d"
+        "e c f";
+    }     
+}
+
+@media  only screen and (max-width: 768px)
+{
+    #img_activites
+    {
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    grid-template-areas: 
+        "a b"
+        "e c"
+        "d f";
+    }     
+}
+
+@media  only screen and (max-width: 600px)
+{
+    #img_activites
+    {
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: repeat(6, 200px);
+    grid-template-areas: 
+        "a"
+        "b"
+        "e"
+        "c"
+        "d"
+        "f";
+    }     
+
+    #img_activites img
+    {
+        height: 150px;
+    }
+
+    #img_activites figcaption
+    {
+        height: 50px;
     }
 }
