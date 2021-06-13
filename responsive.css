@@ -1,224 +1,5 @@
 /* Responsive */
 
-@media all and (max-width: 850px)
-{
-    /* Header */
-
-    header
-    {
-        margin-left: 0;
-        display: inline;
-        margin: 0;
-    }
-
-    #logo
-    {
-        float: unset;
-        display: flex;
-        width: 95%;
-        justify-content: space-between;
-        align-items: center;
-    }
-
-    #logo img 
-    {
-        margin-left: 20px;
-        margin-top: 20px;
-        margin-bottom: 20px;
-    }
-
-    #inscription_mobile
-    {
-        font-family: 'ralewaybold', sans-serif;
-        color: #0065FC;
-        display: initial;
-        margin-top: 20px;
-    }
-
-    #inscription
-    {
-        display: none;
-    }
-
-    nav ul
-    {
-        padding: 0;
-        justify-content: space-around;
-        margin-bottom: 50px;
-        margin-left: 30px;
-        margin-top: 20px;        
-    }
-
-    nav li 
-    {
-        margin: 0;
-        padding: 0;
-    }
-
-    /* Recherche et filtres */
-
-    h1 
-    {
-        font-size: 1.5em;
-        text-align: left;
-    }
-
-    #corps_recherche
-    {
-        margin-left: 20px;
-        margin-top: 10px;
-    }
-
-    .bouton_recherche i
-    {
-        display: flex;
-        font-size: 1.1em;
-    }
-
-    #submit_recherche
-    {
-        display: none;
-    }
-
-    .bouton_recherche
-    {
-        width: 50px;
-        border-radius: 15px;
-    }
-
-    #barre_recherche
-    {
-        margin-top: 30px;
-    }
-
-    #localisation
-    {
-       width: 50px;
-    }
-
-    input 
-    {
-        width: 180px;
-    }
-
-    #info i 
-    {
-        float: left;
-    }
-
-    #filtres
-    {
-        padding-top: 15px;
-    }
-
-    .filtre
-    {
-        margin-left: 0;
-        margin-right: 0;
-        font-size: 0.8em;
-        margin: 5px;
-    }
-
-    .icone_filtre:not(p)
-    {
-        font-size: 1.3em;
-    }
-
-    /* Hébergements */
-
-    #classique_pop
-    {
-        flex-direction: column-reverse;
-    }
-    
-    #populaires
-    {
-        border-radius: 0;
-        margin: 0;
-        width: 100%;
-    }
-
-    .carte_populaires
-    {
-        margin-left: 0;
-        margin-right: 0;
-    }
-
-    .carte_hebergement_pop
-    {
-        width: 100%;
-    }
-
-    .carte_hebergement_pop img 
-    {
-        width: 50%;
-        min-width: 130px;
-    }
-
-    .bloc_texte_pop
-    {
-        width: 100%;
-    }
-
-    .carte_logements
-    {
-        width: 100%;
-        margin-left: 0;
-        border-radius: 0;
-        background-color: transparent;
-    }
-
-    .hebergement
-    {
-        display: inline;
-    }
-
-    #voirplus
-    {
-        margin-top: 0;
-        margin-bottom: 0;
-    }
-
-    /* Activités */
-
-    .activites_marseille 
-    {
-        margin-left: 0;
-    }
-
-    .activites_marseille h2
-    {
-        margin-left: 20px;
-    }
-
-    /* Footer */
-
-    footer 
-    {
-        flex-direction: column;
-    }
-
-    #a_propos
-    {
-        margin-left: 30px;
-        width: 100%;
-    }
-
-   #nos_hebergements
-    {
-        margin-left: 30px;
-        width: 100%;
-        margin-top: -60px;
-    }
-
-    #assistance
-    {
-        margin-left: 30px;
-        width: 100%;
-        margin-top: -60px;
-    }
-}
-
 @media  only screen and (max-width: 1080px)
 {
     .filtre
@@ -310,8 +91,175 @@
     }     
 }
 
+@media only screen and (max-width: 700px)
+{
+    .hebergement 
+    {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    margin-left: 10px;
+    }    
+}
+
 @media  only screen and (max-width: 600px)
 {
+    header
+    {
+        margin-left: 0;
+        display: inline;
+        margin: 0;
+    }
+
+    #logo
+    {
+        float: unset;
+        display: flex;
+        width: 95%;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    #logo img 
+    {
+        margin-left: 20px;
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+
+    #inscription_mobile
+    {
+        font-family: 'ralewaybold', sans-serif;
+        color: #0065FC;
+        display: initial;
+        margin-top: 20px;
+    }
+
+    #inscription
+    {
+        display: none;
+    }
+
+    nav ul
+    {
+        padding: 0;
+        justify-content: space-evenly;
+        margin-bottom: 30px;
+        margin-left: 50px;
+        margin-top: 20px;        
+    }
+
+    nav li 
+    {
+        margin: 0;
+        padding: 10px;
+    }
+
+    h1 
+    {
+        font-size: 1.5em;
+        text-align: left;
+    }
+
+    #corps_recherche
+    {
+        margin-left: 20px;
+        margin-top: 10px;
+    }
+
+    .bouton_recherche i
+    {
+        display: flex;
+        font-size: 1.1em;
+    }
+
+    #submit_recherche
+    {
+        display: none;
+    }
+
+    .bouton_recherche
+    {
+        width: 50px;
+        border-radius: 15px;
+    }
+
+    #barre_recherche
+    {
+        margin-top: 30px;
+    }
+
+    #localisation
+    {
+       width: 50px;
+    }
+
+    input 
+    {
+        width: 180px;
+    }
+
+    #info i 
+    {
+        float: left;
+    }
+
+    #filtres
+    {
+        padding-top: 15px;
+    }
+
+    .filtre
+    {
+        margin-left: 0;
+        margin-right: 0;
+        font-size: 0.8em;
+        margin: 5px;
+    }
+
+    .icone_filtre:not(p)
+    {
+        font-size: 1.3em;
+    }
+
+    #classique_pop
+    {
+        padding: 0;
+    }
+
+    #populaires
+    {
+        margin: 0;
+        width: 100%;
+        border-radius: 0;
+        margin-bottom: 20px;
+    }
+
+    .carte_populaires
+    {
+        grid-template-rows: repeat(3, 1fr);
+        grid-template-columns: 1fr;
+    }
+
+    .carte_logements
+    {
+        margin-left: 0;
+        background-color: white;
+        padding: 0;
+    }
+
+    .carte_logements h2
+    {
+        margin-left: 20px;
+    }
+
+    .hebergement
+    {
+        grid-template-rows: repeat(6, 1fr);
+        grid-template-columns: 1fr;
+        gap: 0;
+    }
+
     #img_activites
     {
     grid-template-columns: repeat(1, 1fr);
@@ -334,4 +282,38 @@
     {
         height: 50px;
     }
+
+    footer 
+    {
+        flex-direction: column;
+    }
+
+    #a_propos
+    {
+        margin-left: 30px;
+        width: 100%;
+    }
+
+   #nos_hebergements
+    {
+        margin-left: 30px;
+        width: 100%;
+        margin-top: -60px;
+    }
+
+    #assistance
+    {
+        margin-left: 30px;
+        width: 100%;
+        margin-top: -60px;
+    }
+}
+
+@media only screen and (max-width: 310px)
+{
+    input 
+    {
+        width: 150px;
+        font-size: 0.8em;
+    }    
 }
