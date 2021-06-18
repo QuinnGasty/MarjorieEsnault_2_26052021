@@ -38,7 +38,6 @@ body
 #bloc_page
 {
     margin: 0;
-    width: 100%;
 }
 
 /* Header et nav*/
@@ -47,15 +46,16 @@ header
 {
     display: flex;
     justify-content: space-between;
-    align-items: flex-end;
-    width: 95%;
+    /*align-items: flex-end;*/
+    /*width: 95%;*/
     margin-left: 50px;
+    padding-right: 50px;
 }
 
 #logo
 {
-    float: left;
-    width: 150px;
+    flex: 1;
+    margin-top: 25px;
 }
 
 #inscription_mobile
@@ -67,6 +67,7 @@ header
 {
     font-family: 'ralewaybold', sans-serif;
     color: #0065FC;
+    margin-top: 38px;
 }
 
 nav ul
@@ -88,7 +89,7 @@ a
     color: black;
 }
 
-nav a:hover:not(#inscription)
+nav a:hover
 {
     color: #0065FC;
     border-top: 2px solid #0065FC;

@@ -31,8 +31,9 @@
     .carte_hebergement_pop
     {
         flex-direction: column;
-        height: auto;
+        height: 280px;
         width: auto;
+        overflow: hidden;
     }
 
     .carte_hebergement_pop img 
@@ -41,7 +42,6 @@
         border-radius: 20px 20px 0px 0px;
         height: 200px;
         object-fit: cover;
-        overflow: hidden;
         border: 5px solid #fff;
         border-radius: 20px 20px 0px 0px;
     }
@@ -55,7 +55,8 @@
     {
         width: 100%;
         margin-left: 10px;
-        margin-bottom: 10px;
+        margin-bottom: 30px;
+        height: 90px;
     }
     
     .activites_marseille
@@ -91,7 +92,7 @@
     }     
 }
 
-@media only screen and (max-width: 700px)
+@media only screen and (max-width: 774px)
 {
     .hebergement 
     {
@@ -106,18 +107,16 @@
 {
     header
     {
+        flex-direction: column;
         margin-left: 0;
-        display: inline;
-        margin: 0;
+        padding-right: 0;
+        width: 100%;
     }
 
     #logo
     {
-        float: unset;
-        display: flex;
-        width: 95%;
-        justify-content: space-between;
-        align-items: center;
+       margin-left: 0;
+       margin-top: 0px;
     }
 
     #logo img 
@@ -127,32 +126,54 @@
         margin-bottom: 20px;
     }
 
-    #inscription_mobile
-    {
-        font-family: 'ralewaybold', sans-serif;
-        color: #0065FC;
-        display: initial;
-        margin-top: 20px;
-    }
-
     #inscription
     {
-        display: none;
+        order: 2;
+        align-self: flex-end;
+        margin-top: -50px;
+        margin-right: 20px;
+    }
+
+    nav 
+    {
+        order: 3;
+        width: 100%;
+        margin: 0;
+        padding: 0;
     }
 
     nav ul
     {
-        padding: 0;
-        justify-content: space-evenly;
+        justify-content: center;
+        align-items: center;
         margin-bottom: 30px;
-        margin-left: 50px;
-        margin-top: 20px;        
+        margin-top: 20px;  
+        margin-right: 0;      
+        margin-left: 0;
+        width: 100%;
+        padding-left: 0;
     }
 
     nav li 
     {
+        border-bottom: 3px solid #F2F2F2;
+        width: 50%;
+        padding-bottom: 12px;
+        padding-right: 0;
+        text-align: center;
         margin: 0;
-        padding: 10px;
+    }
+
+    nav a:hover
+    {
+        border-top: none;
+        padding-top: 34px;
+    }
+
+    nav li:hover
+    {
+        color: #0065FC;
+        border-bottom: 3px solid #0065FC;
     }
 
     h1 
